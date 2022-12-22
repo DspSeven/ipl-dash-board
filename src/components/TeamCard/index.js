@@ -8,10 +8,10 @@ const TeamCard = props => {
 
   return (
     <Link to={`/team-matches/${id}`}>
-      <div>
+      <li>
         <img src={teamImageUrl} alt={`player-from-${id}`} />
         <h1>{name}</h1>
-      </div>
+      </li>
     </Link>
   )
 }
