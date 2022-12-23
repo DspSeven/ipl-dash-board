@@ -1,4 +1,5 @@
 // Write your code here
+// Write your code here
 import './index.css'
 
 const MatchCard = props => {
@@ -18,12 +19,12 @@ const MatchCard = props => {
   console.log(newData)
   const {competingTeam, competingTeamLogo, result, matchStatus} = newData
   return (
-    <div>
-      <img src={competingTeamLogo} alt="team banner" />
+    <li>
+      <img src={competingTeamLogo} alt={`competing team ${competingTeam}`} />
       <p>{competingTeam}</p>
       <p>{matchStatus}</p>
       <p>{result}</p>
-    </div>
+    </li>
   )
 }
 export default MatchCard
