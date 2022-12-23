@@ -1,4 +1,5 @@
 // Write your code here
+// Write your code here
 import './index.css'
 
 const LatestMatch = props => {
@@ -23,10 +24,9 @@ const LatestMatch = props => {
         <p>{venue}</p>
         <p>{result}</p>
       </div>
-      <img src={competingTeamLogo} alt="team banner" />
+      <img src={competingTeamLogo} alt={`latest match ${competingTeam}`} />
       <div>
         <p>{firstInnings}</p>
-        <p>{manOfTheMatch}</p>
         <p>{manOfTheMatch}</p>
         <p>{matchStatus}</p>
         <p>{secondInnings}</p>
