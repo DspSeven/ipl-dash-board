@@ -1,1 +1,33 @@
 /* Write your CSS here */
+/* Write your CSS here */
+.list-container-container {
+  list-style-type: none;
+  background-color: #0f172a;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  height: 500px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.match-card-logo {
+  height: 25vh;
+}
+.match-card-para {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-weight: 25px;
+}
+.won-match {
+  color: green;
+  font-family: 'Bree Serif';
+  font-size: 25px;
+}
+.lost-match {
+  color: red;
+  font-family: 'Bree Serif';
+  font-size: 25px;
+}
