@@ -1,5 +1,6 @@
 // Write your code here
 // Write your code here
+// Write your code here
 import './index.css'
 
 const LatestMatch = props => {
@@ -17,20 +18,25 @@ const LatestMatch = props => {
     venue,
   } = eachPlayerData
   return (
-    <div>
-      <div>
-        <p>{competingTeam}</p>
-        <p>{date}</p>
-        <p>{venue}</p>
-        <p>{result}</p>
+    <div className="latest-match-container">
+      <div className="first-container">
+        <p className="latest-match-paragraph">{competingTeam}</p>
+        <p className="latest-match-paragraph">{date}</p>
+        <p className="latest-match-paragraph">{venue}</p>
+        <p className="latest-match-paragraph">{result}</p>
       </div>
-      <img src={competingTeamLogo} alt={`latest match ${competingTeam}`} />
-      <div>
-        <p>{firstInnings}</p>
-        <p>{manOfTheMatch}</p>
-        <p>{matchStatus}</p>
-        <p>{secondInnings}</p>
-        <p>{umpires}</p>
+      <img
+        src={competingTeamLogo}
+        alt={`latest match ${competingTeam}`}
+        className="latest-match-logo"
+      />
+
+      <div className="second-container">
+        <p className="latest-match-paragraph">{firstInnings}</p>
+        <p className="latest-match-paragraph">{manOfTheMatch}</p>
+        <p className="latest-match-paragraph">{matchStatus}</p>
+        <p className="latest-match-paragraph">{secondInnings}</p>
+        <p className="latest-match-paragraph">{umpires}</p>
       </div>
     </div>
   )
