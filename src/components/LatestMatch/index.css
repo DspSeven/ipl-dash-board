@@ -1,1 +1,40 @@
 /* Write your CSS here */
+/* Write your CSS here */
+.latest-match-container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 7px;
+  width: 90%;
+}
+.first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.latest-match-logo {
+  height: 35vh;
+  align-self: center;
+  margin-right: 35px;
+}
+.latest-match-paragraph {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 25px;
+  font-weight: 5px;
+}
+.l-m-f-c {
+  display: flex;
+  justify-content: space-around;
+}
