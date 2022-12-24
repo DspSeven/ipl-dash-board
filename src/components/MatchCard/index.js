@@ -1,5 +1,6 @@
 // Write your code here
 // Write your code here
+// Write your code here
 import './index.css'
 
 const MatchCard = props => {
@@ -18,12 +19,17 @@ const MatchCard = props => {
   }
   console.log(newData)
   const {competingTeam, competingTeamLogo, result, matchStatus} = newData
+  const wonOrLoss = matchStatus === 'Won' ? 'won-match' : 'lost-match'
   return (
-    <li>
-      <img src={competingTeamLogo} alt={`competing team ${competingTeam}`} />
-      <p>{competingTeam}</p>
-      <p>{matchStatus}</p>
-      <p>{result}</p>
+    <li className="list-container-container">
+      <img
+        src={competingTeamLogo}
+        alt={`competing team ${competingTeam}`}
+        className="match-card-logo"
+      />
+      <p className="match-card-para">{competingTeam}</p>
+      <p className={wonOrLoss}>{matchStatus}</p>
+      <p className="match-card-para">{result}</p>
     </li>
   )
 }
