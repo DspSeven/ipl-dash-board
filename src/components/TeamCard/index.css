@@ -1,1 +1,30 @@
 /* Write your CSS here */
+/* Write your CSS here */
+.list-container {
+  list-style-type: none;
+  border-radius: 7px;
+  border: 1px solid #475569;
+  background-color: #ffffff33;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+}
+.team-image {
+  height: 15vh;
+  width: 100px;
+  align-self: center;
+}
+.team-name {
+  text-decoration-skip: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 5px;
+  font-family: 'Bree Serif';
+}
+.link-container {
+  height: 20vh;
+  width: 50%;
+}
