@@ -1,5 +1,6 @@
 // Write your code here
 // Write your code here
+// Write your code here
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import {Link} from 'react-router-dom'
@@ -34,16 +35,17 @@ class Home extends Component {
     const {playersData} = this.state
     const {id} = playersData
     return (
-      <div>
-        <div>
+      <div className="home-container">
+        <div className="ipl-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
             alt="ipl logo"
+            className="ipl-logo"
           />
-          <h1>IPL Dashboard</h1>
+          <h1 className="ipl-heading">IPL Dashboard</h1>
         </div>
         <Link to={`/team-matches/${id}`}>
-          <ul>
+          <ul className="unordered-list">
             {playersData.map(eachPlayer => (
               <TeamCard playerDetails={eachPlayer} key={eachPlayer.id} />
             ))}
@@ -56,9 +58,15 @@ class Home extends Component {
   render() {
     const {isLoading} = this.state
     return (
-      <div testid="loader">
+      <div>
         {isLoading ? (
-          <Loader type="Oval" color="#ffffff" height={50} width={50} />
+          <Loader
+            type="Oval"
+            color="#ffffff"
+            height={50}
+            width={50}
+            className="loader-class"
+          />
         ) : (
           this.playersCard()
         )}
