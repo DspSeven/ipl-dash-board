@@ -1,5 +1,6 @@
 // Write your code here
 // Write your code here
+// Write your code here
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import LatestMatch from '../LatestMatch'
@@ -46,11 +47,31 @@ class TeamMatches extends Component {
   players = () => {
     const {eachPlayerData} = this.state
     const {recentMatches, teamBannerUrl} = eachPlayerData
+    const colorsList = [
+      '#d91c1f',
+      '#f7db00',
+      '#da237b',
+      '#f26d22',
+      '#4f5db0',
+      '#0f172a',
+      '#18ed66',
+      '#e31a1a',
+    ]
+    const randomNumber = Math.floor(Math.random() * 8)
+    const randomColor = colorsList[randomNumber]
+    console.log(randomColor)
     return (
-      <div>
-        <img src={teamBannerUrl} alt="team banner" />
+      <div
+        className="team-match-container"
+        style={{backgroundColor: randomColor}}
+      >
+        <img
+          src={teamBannerUrl}
+          alt="team banner"
+          className="team-match-image"
+        />
         <LatestMatch eachPlayerData={eachPlayerData} />
-        <ul>
+        <ul className="unorder-list-container">
           {recentMatches.map(recentGame => (
             <MatchCard playerDetails={recentGame} key={recentGame.id} />
           ))}
@@ -62,7 +83,7 @@ class TeamMatches extends Component {
   render() {
     const {isLoading} = this.state
     return (
-      <div testid="loader">
+      <div>
         {isLoading ? (
           <Loader type="Oval" color="#ffffff" height={50} width={50} />
         ) : (
