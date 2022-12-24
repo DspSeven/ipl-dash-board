@@ -1,5 +1,6 @@
 /* Write your CSS here */
 /* Write your CSS here */
+/* Write your CSS here */
 .list-container {
   list-style-type: none;
   border-radius: 7px;
@@ -14,15 +15,14 @@
 .team-image {
   height: 15vh;
   width: 100px;
-  align-self: center;
 }
 .team-name {
-  text-decoration-skip: none;
   color: #ffffff;
   text-align: center;
   font-size: 20px;
   font-weight: 5px;
   font-family: 'Bree Serif';
+  margin-left: 5px;
 }
 .link-container {
   height: 20vh;
